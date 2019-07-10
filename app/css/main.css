@@ -1,0 +1,96 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+
+.html{height: 100%;}
+
+.bg {
+  background-size: 100% 100%;
+  background-image: url(../../img/bg1.jpg);
+  position: absolute;
+}
+
+a:link {color: #017446; text-decoration:none;} 
+a:active {color: #043c25;} 
+a:visited {color:purple; text-decoration:none;} 
+a:hover {color: #043c25; text-decoration:none;} 
+
+.user_input {
+  width:300px;
+  height:30px;
+  margin-top:30px;
+  margin-bottom: 0px;
+  padding: 5px 5px 3px 5px;
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  border: transparent;
+  border-bottom: 4px solid #017446;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user_input:hover {
+  border-bottom: 4px solid #043c25;
+ }
+.login_btn:hover {
+  background-color: #043c25;
+}
+
+.input_table {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(242,236,224,0.7);
+  position: relative;
+  top: 295px;
+  left: 300%;
+  box-shadow: 0px 0px 10px 2px #666;
+  text-align: center;
+}
+
+.welcome_title {
+  color: #017446;
+  margin-top: 35px; 
+}
+
+.logo {
+  position: absolute;
+  top: 56px;
+  left: 131px;
+}
+
+.login_btn{
+  width: 300px;
+  height: 20px;
+  background-color: #017446;
+  padding: 9px 0 9px 0;
+  font-weight: bold;
+  margin-left: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: 276px;
+}
+.pull_right {
+  float: right; 
+
+}
+.pull_left {
+    float: left; 
+  
+}
+
+
+.check_box i {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+
+}
+
+.check_box input[type="checkbox"]:checked +i {
+  background-image: url(../../img/check_box.png);
+  background-size: 100% 100%;
+}

@@ -1,20 +1,29 @@
 <!doctype html>
-<html>
+<html class="html">
   <head>
-	  <title></title>	
+	  <title>用户登录</title>	
 	  <meta charset="utf-8">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/main.css">
 	</head>
-	<body>
-    <div>
-		  <h2>用户登录</h2>
-			<form action="/user/login" method="post">
-			  <input type="text" placeholder="请输入用户名" name='uname'><br>
-			  <input type="password" placeholder="请输入密码" name='upwd'><br>
-				<input type="checkbox" name="auto" id="auto"><label for="auto">自动登录</label><br>
-				<button>登录</button>
-        
-			</form>
+	<body class="bg">
+	  <div class="logo">
+		  <img src="../../img/logo.png">
+		</div>
+    <div class="input_table">
+		  <table></table>
+		  <h2 class="welcome_title">欢迎登录</h3>
+		  <input type="text" placeholder="用户名" class="user_input"><br>
+		  <input type="password" placeholder="密码" class="user_input"><br>
+		  <div>
+			  <label class="check_box">
+			    <input type="checkbox" hidden>
+				  <i></i>
+				  <span>记住密码</span>
+				  <a href="http://www.baidu.com" class="pull_right">忘记密码</a>
+			  </label>
+			</div>
+			<div class="login_btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+			
 		</div>
 	</body>
 </html>
