@@ -8,6 +8,7 @@ em,i{font-style: normal;}
   background-image: url(bg1.jpg);
   background-repeat: no-repeat;
   position: absolute;
+  overflow: hidden;
 }
 
 a:link {color: #017446; text-decoration:none;} 
@@ -173,4 +174,28 @@ input:-webkit-autofill {
   position: absolute;
   top: 326px;
   margin-left:114px;
+}
+
+.apay:hover {
+  width: 32px;
+  height:32px;
+  background-size:32px;
+}
+
+.apay:active {
+  width: 30px;
+  height:30px;
+  background-size:30px;
+}
+
+.wpay:hover {
+  width: 32px;
+  height:32px;
+  background-size:32px;
+}
+
+.wpay:active {
+  width: 30px;
+  height:30px;
+  background-size:30px;
 }
