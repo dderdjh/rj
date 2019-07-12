@@ -28,6 +28,11 @@ a:hover {color: #08653f; text-decoration:none;}
   text-align: center;
   font-weight: bold;
   box-sizing: border-box;
+  
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgba(242,236,224,0.7) inset;
 }
 
 .user_input:hover {
@@ -37,8 +42,16 @@ a:hover {color: #08653f; text-decoration:none;}
   background-color: #08653f;
 }
 
+.login_btn:active {
+  background-color: #054b2e;
+}
+
 .reg_btn:hover {
   background-color: #08653f;
+}
+
+.reg_btn:active {
+  background-color: #054b2e;
 }
 
 .input_table {
@@ -58,6 +71,7 @@ a:hover {color: #08653f; text-decoration:none;}
   color: #017446;
   margin-top: 9px;
   text-align: center; 
+  user-select: none;
 }
 
 .logo {
@@ -67,6 +81,11 @@ a:hover {color: #08653f; text-decoration:none;}
   top: 56px;
   left: 131px;
   background: url(logo.png) no-repeat;
+}
+
+.login_btn,.reg_btn {
+  cursor: pointer;
+  user-select: none;
 }
 
 .login_btn{
@@ -135,7 +154,7 @@ a:hover {color: #08653f; text-decoration:none;}
 .input_table .login_from_three {
   width: 100%;
   margin: 0 auto;
-  margin-top: 160px;
+  margin-top: 165px;
 }
 
 .apay,.wpay {

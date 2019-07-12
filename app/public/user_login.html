@@ -10,7 +10,6 @@
         var $uname = uname.value;
 				var $upwd = upwd.value;
 				var xhr=new XMLHttpRequest();
-				console.log(xhr);
 				xhr.onreadystatechange=function (){
 					if (xhr.readyState==4 && xhr.status==200)	{
             var result = xhr.responseText;
