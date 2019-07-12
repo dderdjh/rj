@@ -3,26 +3,49 @@
   <head>
 	  <title>用户登录</title>	
 	  <meta charset="utf-8">
-		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+		  //用户登录
+			function login(){
+        var $uname = uname.value;
+				var $upwd = upwd.value;
+				var xhr=new XMLHttpRequest();
+				console.log(xhr);
+				xhr.onreadystatechange=function (){
+					if (xhr.readyState==4 && xhr.status==200)	{
+            var result = xhr.responseText;
+						if (result=="1"){
+							alert("登录成功!");
+						}else if(result=="0"){
+							alert("登录失败");
+						}
+					}
+				}
+				xhr.open("get","/user/v1/login/"+$uname+"&"+$upwd,true);
+				xhr.send(null);
+			}
+		</script>
 	</head>
 	<body class="bg">
-	  <div class="logo">
-		  <img src="../../img/logo.png">
-		</div>
+	  <div class="logo"></div>
     <div class="input_table">
 		  <table></table>
 		  <h2 class="welcome_title">欢迎登录</h3>
-		  <input type="text" placeholder="用户名" class="user_input"><br>
-		  <input type="password" placeholder="密码" class="user_input"><br>
-		  <div>
+		  <input type="text" placeholder="用户名" class="user_input" id="uname"><br>
+		  <input type="password" placeholder="密码" class="user_input" id="upwd"><br>
+		  <div class="rem_forget">
 			  <label class="check_box">
 			    <input type="checkbox" hidden>
 				  <i></i>
 				  <span>记住密码</span>
-				  <a href="http://www.baidu.com" class="pull_right">忘记密码</a>
+				  <a href="#" class="pull_right">忘记密码?</a>
 			  </label>
 			</div>
-			<div class="login_btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+			<div class="login_btn" onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+			<div class="wpay"><i></i></div>
+			<div class="apay"><i></i></div>
+			<div class="reg_btn">新用户注册</div>
+			<div class="login_from_three"><hr></div>
 			
 		</div>
 	</body>

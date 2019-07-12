@@ -22,24 +22,21 @@ router.post('/reg',function(req,res){
   });
 });
 //登录路由
-router.post('/login',function(req,res){
-  var uname=req.body.uname,upwd=req.body.upwd;
-  console.log(uname,upwd);
-  //判断数据是否为空
-  if(!uname){
-    res.send({code:401,msg:'uname required'});
-	return;
-  }
-  if(!upwd){
-    res.send({code:402,msg:'upwd required'});
-	return;
-  }
-  var sql='SELECT * FROM rj_user WHERE uname=? && upwd=?';
-  pool.query(sql,[uname,upwd],function(err,result){
-    if(err) throw err;
-    res.send(result);
-	
+router.get("/v1/login/:uname&:upwd",(req,res)=>{
+  var $uname = req.params.uname;
+  var $upwd = req.params.upwd;
+  var sql = "SELECT uname,upwd FROM rj_user WHERE uname=? AND upwd=?;"
+  pool.query(sql,[$uname,$upwd],(err,result)=>{
+    if (err) throw err;
+    if(result.length>0){
+      res.send("1");
+    }else{
+      res.send("0");
+    }
+
   });
+
+
 });
 
 //导出路由

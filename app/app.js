@@ -6,6 +6,8 @@ app.listen(8080);
 console.log('服务器启动成功');
 
 app.use(express.static('public'));
+app.use(express.static("img"));
+app.use(express.static("css"));
 app.use(bodyParser.urlencoded({
   extended:false
 }));

@@ -1,23 +1,24 @@
 blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+em,i{font-style: normal;}
 
 .html{height: 100%;}
 
 .bg {
   background-size: 100% 100%;
-  background-image: url(../../img/bg1.jpg);
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
   position: absolute;
 }
 
 a:link {color: #017446; text-decoration:none;} 
-a:active {color: #043c25;} 
+a:active {color: #08653f;} 
 a:visited {color:purple; text-decoration:none;} 
-a:hover {color: #043c25; text-decoration:none;} 
+a:hover {color: #08653f; text-decoration:none;} 
 
 .user_input {
-  width:300px;
+  width:100%;
   height:30px;
   margin-top:30px;
-  margin-bottom: 0px;
   padding: 5px 5px 3px 5px;
   font-size: 18px;
   background-color: transparent;
@@ -26,36 +27,46 @@ a:hover {color: #043c25; text-decoration:none;}
   border-bottom: 4px solid #017446;
   text-align: center;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .user_input:hover {
-  border-bottom: 4px solid #043c25;
+  border-bottom: 4px solid #064c2f;
  }
 .login_btn:hover {
-  background-color: #043c25;
+  background-color: #08653f;
+}
+
+.reg_btn:hover {
+  background-color: #08653f;
 }
 
 .input_table {
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 420px;
   border-radius: 10px;
   background-color: rgba(242,236,224,0.7);
   position: relative;
   top: 295px;
   left: 300%;
   box-shadow: 0px 0px 10px 2px #666;
-  text-align: center;
+  /* text-align: center; */
+  padding: 30px;
 }
 
 .welcome_title {
   color: #017446;
-  margin-top: 35px; 
+  margin-top: 9px;
+  text-align: center; 
 }
 
 .logo {
+  width: 212px;
+  height: 108px;
   position: absolute;
   top: 56px;
   left: 131px;
+  background: url(logo.png) no-repeat;
 }
 
 .login_btn{
@@ -64,18 +75,31 @@ a:hover {color: #043c25; text-decoration:none;}
   background-color: #017446;
   padding: 9px 0 9px 0;
   font-weight: bold;
-  margin-left: 50px;
+  font-size: 17px;
+  text-align: center;
   border-radius: 20px;
   position: absolute;
-  top: 276px;
+  top: 274px;
 }
+
+.reg_btn{
+  width: 120px;
+  height: 20px;
+  background-color: #017446;
+  padding: 9px 0 9px 0;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 417px;
+}
+
 .pull_right {
   float: right; 
-
 }
 .pull_left {
     float: left; 
-  
 }
 
 
@@ -87,10 +111,47 @@ a:hover {color: #043c25; text-decoration:none;}
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-
 }
 
 .check_box input[type="checkbox"]:checked +i {
-  background-image: url(../../img/check_box.png);
+  background-image: url(check_box.png);
   background-size: 100% 100%;
+}
+
+.rem_forget {
+  width:100%;
+  margin-top:21px;
+  font-size: 15px;
+}
+
+.input_table hr {
+  background-color:#017446;
+  width:60%;
+  margin: 0 auto;
+  height: 1px;
+  border:none;
+}
+
+.input_table .login_from_three {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.apay,.wpay {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 326px;
+  display: inline-block;
+  background: url(apay.png) no-repeat;
+  background-size: 30px;
+  margin-left:164px;
+}
+
+.wpay {
+  background-image: url(wpay.png);
+  position: absolute;
+  top: 326px;
+  margin-left:114px;
 }
