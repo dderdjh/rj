@@ -14,8 +14,9 @@
            uname_msg.innerHTML = "请输入用户名";
 					 upwd_msg.innerHTML = "请输入密码";
 					 return;
-				}else if($uname==""){
+				}else if($uname=="" && $upwd){
            uname_msg.innerHTML = "请输入用户名";
+					 upwd_msg.innerHTML = "";
 					 return;
 				}else{
 					uname_msg.innerHTML = "";
