@@ -9,6 +9,23 @@
 			function login(){
         var $uname = uname.value;
 				var $upwd = upwd.value;
+				//验证非空
+				if ($uname=="" && $upwd==""){
+           uname_msg.innerHTML = "请输入用户名";
+					 upwd_msg.innerHTML = "请输入密码";
+					 return;
+				}else if($uname==""){
+           uname_msg.innerHTML = "请输入用户名";
+					 return;
+				}else{
+					uname_msg.innerHTML = "";
+				}
+				if ($upwd==""){
+					upwd_msg.innerHTML = "请输入密码";
+					return;
+				}else{
+					upwd_msg.innerHTML = "";
+				}
 				var xhr=new XMLHttpRequest();
 				xhr.onreadystatechange=function (){
 					if (xhr.readyState==4 && xhr.status==200)	{
@@ -30,8 +47,10 @@
     <div class="input_table">
 		  <table></table>
 		  <h2 class="welcome_title">欢迎登录</h3>
-		  <input type="text" placeholder="用户名" class="user_input" id="uname"><br>
-		  <input type="password" placeholder="密码" class="user_input" id="upwd"><br>
+		  <input type="text" placeholder="用户名" class="user_input" maxlength="26" id="uname"><br>
+			<span class="info_msg" id="uname_msg"></span>
+		  <input type="password" placeholder="密码" class="user_input" maxlength="35" id="upwd"><br>
+			<span class="info_msg" id="upwd_msg"></span>
 		  <div class="rem_forget">
 			  <label class="check_box">
 			    <input type="checkbox" hidden>

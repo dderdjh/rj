@@ -25,11 +25,10 @@ a:hover {color: #08653f; text-decoration:none;}
   background-color: transparent;
   outline: none;
   border: transparent;
-  border-bottom: 4px solid #017446;
+  border-bottom: 2px solid #017446;
   text-align: center;
   font-weight: bold;
   box-sizing: border-box;
-  
 }
 
 input:-webkit-autofill {
@@ -37,9 +36,9 @@ input:-webkit-autofill {
 }
 
 .user_input:hover {
-  border-bottom: 4px solid #064c2f;
+  border-bottom: 2px solid #064c2f;
  }
-.login_btn:hover {
+/* .login_btn:hover {
   background-color: #08653f;
 }
 
@@ -53,6 +52,14 @@ input:-webkit-autofill {
 
 .reg_btn:active {
   background-color: #054b2e;
+} */
+
+.info_msg {
+  width: 100%;
+  height: 12px;
+  float: left;
+  font: 13px "simhei", Arial, Helvetica, sans-serif;
+  color: #ff3131;
 }
 
 .input_table {
@@ -92,7 +99,7 @@ input:-webkit-autofill {
 .login_btn{
   width: 300px;
   height: 20px;
-  background-color: #017446;
+  background-image: linear-gradient(45deg,#017446,#07945c);
   padding: 9px 0 9px 0;
   font-weight: bold;
   font-size: 17px;
@@ -105,7 +112,7 @@ input:-webkit-autofill {
 .reg_btn{
   width: 120px;
   height: 20px;
-  background-color: #017446;
+  background-image: linear-gradient(45deg,#017446,#07945c);
   padding: 9px 0 9px 0;
   font-weight: bold;
   font-size: 15px;
@@ -140,7 +147,7 @@ input:-webkit-autofill {
 
 .rem_forget {
   width:100%;
-  margin-top:21px;
+  margin-top: 29px;
   font-size: 15px;
 }
 
@@ -155,7 +162,7 @@ input:-webkit-autofill {
 .input_table .login_from_three {
   width: 100%;
   margin: 0 auto;
-  margin-top: 165px;
+  margin-top: 145px;
 }
 
 .apay,.wpay {
