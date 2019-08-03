@@ -20,6 +20,7 @@ function login() {
   } else {
     upwd_msg.innerHTML = "";
   }
+  // 登录验证
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {

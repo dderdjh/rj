@@ -68,24 +68,27 @@ input:-webkit-autofill {
   border-radius: 10px;
   background-color: rgba(242,236,224,0.7);
   position: relative;
-  top: 295px;
+  top: 234px;
   left: 300%;
   box-shadow: 0px 0px 10px 2px #666;
   /* text-align: center; */
   padding: 30px;
+  display:none;
 }
 
 .reg_table {
   width: 300px;
-  height: 420px;
+  height: 512px;
   border-radius: 10px;
   background-color: rgba(242,236,224,0.7);
-  position: absolute;
-  top: 295px;
+  position: relative;
+  top: 234px;
   left: 300%;
   box-shadow: 0px 0px 10px 2px #666;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
+  
 }
+
 
 .welcome_title {
   color: #017446;
@@ -103,7 +106,7 @@ input:-webkit-autofill {
   background: url(../img/logo.png) no-repeat;
 }
 
-.login_btn,.reg_btn {
+.login_btn,.reg_sbtn {
   cursor: pointer;
   user-select: none;
 }
@@ -121,7 +124,12 @@ input:-webkit-autofill {
   top: 274px;
 }
 
-.reg_btn{
+.login_btn.reg_btn {
+  position: absolute;
+  top: 435px;
+}
+
+.reg_sbtn{
   width: 120px;
   height: 20px;
   background-image: linear-gradient(45deg,#017446,#07945c);
@@ -134,8 +142,8 @@ input:-webkit-autofill {
   top: 417px;
 }
 
-.login_sbtn {
-  background: #ff3131;
+.reg_sbtn.login_sbtn {
+  top: 499px;
 }
 
 .pull_right {
@@ -167,7 +175,7 @@ input:-webkit-autofill {
   font-size: 15px;
 }
 
-.input_table hr {
+.input_table,.reg_table hr {
   background-color:#017446;
   width:60%;
   margin: 0 auto;
@@ -179,6 +187,10 @@ input:-webkit-autofill {
   width: 100%;
   margin: 0 auto;
   margin-top: 145px;
+}
+
+.input_table,.reg_table .login_from_three {
+  margin-top: 88px;
 }
 
 .apay,.wpay {
@@ -223,7 +235,8 @@ input:-webkit-autofill {
   background-size:30px;
 }
 
-.reg_table {
-  display: none;
+.reg_table .info_msg {
+  display:inline-block;
 }
+
 
