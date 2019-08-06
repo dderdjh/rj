@@ -1,0 +1,58 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+em,i{font-style: normal;}
+
+.fl_left {
+  float: left;
+}
+
+.fl_right {
+  float: right;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+}
+
+.top_bar {
+  height: 22px;
+  background-color: #f6f6f6;
+  padding:3px;
+  font: 0.7rem "宋体";
+  vertical-align: middle;
+  margin-left:15%;
+}
+
+.top_bar .welcome {
+  width: 230px;
+  line-height: 22px;
+}
+
+.link {
+  color: #017446;
+  text-decoration: none;
+}
+
+.top_function {
+  width: 400px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.top_function ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .top_function_bar .tel{
+  padding-left:20px;
+  background:url(../img/tel.png) left 9px no-repeat;
+  background-position-y: 50%;
+  
+}
+
+#header .top_function_bar span {
+  color: #017446;
+}
+
