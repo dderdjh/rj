@@ -20,12 +20,12 @@ em,i{font-style: normal;}
   padding:3px;
   font: 0.7rem "宋体";
   vertical-align: middle;
-  margin-left:15%;
 }
 
 .top_bar .welcome {
   width: 230px;
   line-height: 22px;
+  margin-left: 15%;
 }
 
 .link {
@@ -37,6 +37,7 @@ em,i{font-style: normal;}
   width: 400px;
   height: 22px;
   line-height: 22px;
+  margin-right: 15%;
 }
 
 .top_function ul{
@@ -45,14 +46,87 @@ em,i{font-style: normal;}
   justify-content: space-between;
 }
 
+#header .top_function_bar .zh,.help,.service {
+  display: inline-block;
+  padding-left: 20px;
+}
+
 #header .top_function_bar .tel{
   padding-left:20px;
   background:url(../img/tel.png) left 9px no-repeat;
   background-position-y: 50%;
-  
 }
 
 #header .top_function_bar span {
   color: #017446;
 }
 
+#header .top_function_bar .zh{
+  background:url(../img/zh.png) left 9px no-repeat / 12px;
+  background-position-y: 50%;
+}
+
+#header .top_function_bar .help{
+  background:url(../img/help1.png) left 9px no-repeat / 12px;
+  background-position-y: 50%;
+}
+
+#header .top_function_bar .service{
+  background:url(../img/server.png) left 9px no-repeat / 12px;
+  background-position-y: 50%;
+}
+
+#header .logo {
+  margin-left: 15%;
+}
+
+#header form {
+  display:block;
+  width: 451px;
+  margin: 38px 0 0;
+}
+
+#header form li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#header form .ss_input {
+  float:right;
+	width:348px;
+	height:34px;
+	overflow:hidden;
+	text-align:center;
+	background:white;
+	border:1px solid #017446;
+}
+
+#header form .ss_input input {
+  border:0;
+	padding:0;
+	background:none;
+	width:320px;
+	height:100%;
+  line-height:34px;
+  outline: 0;
+}
+
+#header form .ss_search_btn input{
+  border:0;
+	background:url(../img/s.png);
+	width:101px;
+	height:36px;
+	cursor:pointer;
+	/* text-indent:-999px; */
+}
+
+#header form .kw {
+  font: 0.77rem "宋体";
+  color: #585858;
+  margin-top: 5px;
+}
+
+#header form .kw a {
+  color: #585858;
+  text-decoration: none;
+}
