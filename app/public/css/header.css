@@ -23,7 +23,7 @@ em,i{font-style: normal;}
 }
 
 .top_bar .welcome {
-  width: 230px;
+  width: 252px;
   line-height: 22px;
   margin-left: 15%;
 }
@@ -77,11 +77,12 @@ em,i{font-style: normal;}
 }
 
 #header .logo {
+  height:90px;
   margin-left: 15%;
 }
 
 #header form {
-  display:block;
+  /* display:block; */
   width: 451px;
   margin: 38px 0 0;
 }
@@ -89,6 +90,10 @@ em,i{font-style: normal;}
 #header form li {
   display: inline-block;
   text-decoration: none;
+}
+
+#header form {
+  margin-left: 10%;
 }
 
 #header form .ss_input {
@@ -129,4 +134,50 @@ em,i{font-style: normal;}
 #header form .kw a {
   color: #585858;
   text-decoration: none;
+}
+
+#header a.shopping_car_btn{
+  width: 133px;
+  height: 25px;
+  background: url("../img/bg3.png") no-repeat 6px 8px;
+  background-color: #f7f7f7;
+  text-decoration: none;
+  color: #555;
+  line-height:25px;
+  border: 1px solid #017446;
+  border-radius: 2px;
+  text-align: center;
+  padding: 3px;
+  margin: 38px 0 0 80px;
+}
+
+#header>#nav_bar{
+  height:40px;
+  background-color: #017446;
+  line-height: 40px;
+  margin-top:97px;
+}
+/* 导航栏 */
+#header>#nav_bar>.nav{
+  list-style: none;
+  margin:0 105px;
+}
+
+#header>#nav_bar>.nav>li{
+  float: left;
+  text-align: center;
+  padding: 0 50px;
+  cursor: pointer;
+}
+
+#header>#nav_bar>.nav>li>a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#header>#nav_bar>.nav>li:not(:first-child){
+  border-left: 1px solid #035f3b;
+}
+#header>#nav_bar>.nav>li:hover{
+  background-color: #d5d710;
 }
